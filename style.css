@@ -29,6 +29,82 @@ body {
 	position:relative;
 }
 
+#menu-bar {
+	background:#101010;
+	height:15vh;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	position:fixed;
+	width:100%;
+	z-index:10;
+	color:#e6e6e4;
+}
+
+#menu-bar .branding {
+    font-size: 1.45vw;
+    font-weight: bold;
+    margin-left: 5.5%;
+}
+
+#menu-bar .right {
+	display:flex;
+	align-items:center;
+	justify-content: flex-end;
+	margin-right:4.5%;
+}
+
+#menu-bar .right span {
+	margin-right:1.8vw;
+}
+
+#menu-bar .right:hover {
+	cursor:pointer;
+}
+
+#menu-bar .right #menu-open-button {
+	width:2.7vw;
+}
+
+#menu-bar .right #menu-open-button div {
+	height:3px;
+	margin-bottom:5px;
+	border-radius:100px;
+	background:#ffffff;
+	position:relative;
+	transition:0.3s;
+}
+
+#menu-bar .right #menu-open-button div:first-of-type {
+	width:82%;
+	left:18%;
+}
+
+#menu-bar .right #menu-open-button div:nth-of-type(2) {
+	width:59%;
+}
+
+#menu-bar .right #menu-open-button div:nth-of-type(3) {
+	width:12%;
+	left:88%;
+}
+
+
+
+#menu-bar .right:hover #menu-open-button div:first-of-type {
+	width:18%;
+	left:82%;
+}
+
+#menu-bar .right:hover #menu-open-button div:nth-of-type(2) {
+	width:51%;
+}
+
+#menu-bar .right:hover #menu-open-button div:nth-of-type(3) {
+	width:88%;
+	left:12%;
+}
+
 #home-screen-1 {
 	background:#101010;
 	z-index:3;
