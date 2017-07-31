@@ -775,7 +775,7 @@ body {
 	}
 }
 
-@media screen and (max-width:620px) and (max-aspect-ratio: 750/1209) {
+@media screen and (max-width:620px) { /*and (max-aspect-ratio: 750/1209) */
 
 
 	html {
