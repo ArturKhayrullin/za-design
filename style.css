@@ -683,11 +683,261 @@ body {
 	width:0.68vw;
 }
 
-/*@media screen and (max-aspect-ratio: 1/1) { 
-	.home-screen {
-		max-height:50vh;
-	}
-}*/
+
+/*ABOUT*/
+
+body.about #home-screen-1 {
+	background:#e4e4e6;
+}
+
+body.about #menu-bar {
+	background:#e4e4e6;
+	color:#1a1a1a;
+}
+
+body.about #menu-bar .right #menu-open-button div {
+	background:#1a1a1a;
+}
+
+body.about #home-screen-1 .circle {
+    max-width: initial;
+    min-width: initial;
+    width: 22.3875%;
+    right: 20%;
+    top: 22.5%;
+}
+
+body.about #home-screen-1 .frame {
+	background:#1a1a1a;
+}
+
+#about-screen-2 {
+	height:62.80000vw;
+	background:#000000;
+	position:relative;
+}
+
+#about-screen-2 .content {
+	width:50.05208%;
+	position:absolute;
+	left:11.14583%;
+	top:34.1%;
+}
+#about-screen-2 h3 {
+	font-size:2.23958vw;
+	font-family:'Roboto Regular';
+	line-height:1.39535;
+	color:#e4e4e6;
+	font-weight:300;
+	margin-bottom:4.1vw;
+}
+
+#about-screen-2 .row {
+	font-size:1.40625vw;
+	letter-spacing:0.02500em;
+	font-family:'Roboto Light';
+	color:#e4e4e6;
+	margin-bottom:1.3vw;
+	font-weight:100;
+}
+
+#about-screen-2 .row .text {
+	margin-left:5vw;
+}
+
+#about-screen-3 {
+	position:relative;
+	background:#e4e4e6;
+	height:34.175vw;
+}
+
+#about-screen-3 img {
+	position:absolute;
+	right:0;
+	bottom:0;
+	width:66.36667%;
+}
+
+#about-screen-4 {
+	position:relative;
+	height:62.50000vw;
+	background:#000000;
+	color:#e4e4e6;
+}
+
+#about-screen-4 .text-left {
+	position: absolute;
+    font-size: 1.40625vw;
+    line-height: 2.2;
+    letter-spacing: 0.02500em;
+    width: 35.6%;
+    top: 24.6%;
+    left: 11.3%;
+}
+
+#about-screen-4 .text-right {
+    font-family: 'Roboto Light';
+    font-size: 0.93750vw;
+    letter-spacing: 0.02500em;
+    line-height: 1.66667;
+    position: absolute;
+    width: 16.71875vw;
+    right: 10.2%;
+    bottom: 19%;
+}
+
+#about-screen-4 img {
+	position:absolute;
+	top:20.83300%;
+	left: 36.30208%;
+	width:26.97917%
+}
+
+#about-screen-5 {
+	height:62.50000vw;
+	background:#ffffff;
+	position:relative;
+}
+
+#about-screen-5 img:first-of-type {
+	position:absolute;
+	top:-36.3375%;
+	left:11.14583%;
+	width:50.05208%
+}
+
+#about-screen-5 img:last-of-type {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:33.17708%;
+}
+
+#about-screen-5 .text-left {
+	color:#808080;
+	font-size:2.23958vw;
+	font-family:'Roboto Medium';
+	letter-spacing:0.00500em;
+	line-height:1.39535;
+	position:absolute;
+	left:16.66667%;
+	top:33.90000%;
+	width:59.33333%;
+}
+
+#about-screen-5 .text-right {
+	font-size:0.93750vw;
+	color:#808080;
+	line-height:1.66667;
+	font-family:'Roboto Light';
+	width:15.82708%;
+	position:absolute;
+	right:11.14583%;
+	bottom:20.00000%;
+}
+
+#about-screen-6 img {
+	width:100%;
+	display:block;
+}
+
+#about-screen-7 {
+	height:92.18750vw;
+	position:relative;
+	background:#1a1a1a;
+}
+
+#about-screen-7 .welcome-frame {
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	background:#ffffff;
+	width:67.66667%;
+	height:27.11864%;
+	position:absolute;
+	left:0;
+	top:-13.55900%;
+
+	font-family:'Roboto Light';
+	color:#1a1a1a;
+	font-size:2.18750vw;
+}
+
+#about-screen-7 .welcome-frame div span {
+	font-family:'Roboto Medium';
+}
+
+#about-screen-7 .content {
+	position: absolute;
+    width: 100%;
+    top: 20.3%;
+}
+
+#about-screen-7 .content .row .person {
+	width:19.47917%;
+	margin: 0% 5.2%;
+}
+
+#about-screen-7 .content .row {
+	display:flex;
+	justify-content: center;
+	margin-bottom:4.5vw;
+}
+
+#about-screen-7 .content .row .person img {
+	display:block;
+	width:100%;
+	margin-bottom:2vw;
+}
+
+#about-screen-7 .content .row .person .name {
+	font-size:1.40625vw;
+	color:#e4e4e6;
+	margin-bottom:0.2vw;
+}
+
+#about-screen-7 .content .row .person .position {
+	font-family:'Roboto Light';
+	color:#808080;
+	font-size:0.93750vw;
+}
+
+#about-screen-8 {
+	background:#f2f2f0;
+	height:56.25000vw;
+	padding:0% 11.14600%;
+	padding-top:8.67500vw;
+	color:#1a1a1a;
+	font-family:'Roboto Medium';
+}
+
+#about-screen-8 h2 {
+	font-size:2.23958vw;
+	text-align:center;
+	letter-spacing:0.00500em;
+	margin-bottom: 7.4vw;
+}
+
+#about-screen-8 .partners {
+	font-size:1.40625vw;
+	letter-spacing:0.01500em;
+}
+
+#about-screen-8 .partners:after {
+	display:block;
+	content:'';
+	clear:both;
+}
+
+#about-screen-8 .partners .column {
+	float:left;
+	width:25%;
+}
+
+#about-screen-8 .partners .column div {
+	margin-bottom:1.2vw;
+}
+
 
 @media screen and (max-width:1120px) {
 
