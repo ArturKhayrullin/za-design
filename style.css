@@ -40,6 +40,7 @@ body {
 	width:100vw;
 	position:relative;
 	max-width:100%;
+	overflow:hidden;
 }
 
 .home-screen {
