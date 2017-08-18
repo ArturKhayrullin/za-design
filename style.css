@@ -151,13 +151,13 @@ body {
 	position:absolute;
 	bottom:-11%;
 	left:0;
-
+	overflow:hidden;
 }
 
 #home-screen-1 .frame .content {
     top: 21.6%;
     left: 24.9%;
-    position: relative;
+    position: absolute;
 }
 
 #home-screen-1 .frame h3 {
@@ -165,7 +165,7 @@ body {
 	font-family:'Roboto Light';
 	font-weight:100;
 	color:#e6e6e4;
-	max-width:44%;
+	max-width:60%;
 	line-height:1.40;
 	font-size:2.24vw;
 	letter-spacing:0.005em;
@@ -952,7 +952,7 @@ body.about #home-screen-1 .frame {
 	}
 
 	#home-screen-1 .frame h3 {
-		max-width:62%;
+		max-width:68%;
 	}
 
 	#home-screen-2 .right .content h5, 
@@ -1098,6 +1098,7 @@ body.about #home-screen-1 .frame {
 		line-height:1.6;
 		max-width:71%;
 		margin-bottom:20%;
+		max-width:none;
 	}
 
 	#home-screen-1 .frame p {
@@ -1419,6 +1420,238 @@ body.about #home-screen-1 .frame {
 		left:11.2%;
 
 	}
+	#home-screen-1 .frame .arrow-down {
+		width:0.8vw;
+		display:none;
+	}
 
 
+	/*ABOUT*/
+
+	body.about #home-screen-1 .circle {
+	    width: 34.3875%;
+	    top: 27.4%;
+	}
+
+	body.about #home-screen-1 .frame h3 {
+		margin-bottom: 6%;
+	}
+
+	#home-screen-1 .frame p {
+	    line-height: 2;
+	    letter-spacing: 0.08em;
+	    max-width: 76%;
+	}
+
+	#about-screen-2 {
+		height:123.53333vw;
+	}
+
+	#about-screen-2 .content {
+		width:74%;
+		top:27.7%;
+	}
+	#about-screen-2 h3 {
+		font-size:5.06667vw;
+		line-height:1.64474;
+		letter-spacing:0.025em;
+	}
+
+	#about-screen-2 .row {
+		font-size:3.20000vw;
+		margin-bottom:4.2vw;
+	}
+
+	#about-screen-2 .row .number {
+		color:#808080;
+	}
+
+	#about-screen-2 h3 {
+		margin-bottom:11.4vw;
+	}
+
+	#about-screen-2 .row .text {
+	    margin-left: 13vw;
+	    letter-spacing: 0.05em;
+	}
+
+	#about-screen-3 {
+		height:83.46667vw;
+	}
+
+	#about-screen-3 img {
+		width:auto;
+		height:100%;
+		top:initial;
+		bottom:initial;
+		left:50%;
+		transform:translateX(-50%);
+		display:block;
+	}
+
+	#about-screen-4 {
+		height:172.40000vw;
+	}
+
+	#about-screen-4 .text-left {
+	    font-size: 5.06667vw;
+	    line-height: 1.64474;
+	    width: 74.6%;
+	    top: 16.1%;
+	    left: 11.3%;
+	}
+
+	#about-screen-4 .text-right {
+	    font-family: 'Roboto Light';
+	    font-size: 3.20000vw;
+	    letter-spacing: 0.02500em;
+	    line-height: 1.66667;
+	    position: absolute;
+	    width: 51.71875%;
+	    right: 10.2%;
+	    bottom: 21.5%;
+	    text-align: right;
+	}
+
+	#about-screen-4 img {
+		top:44.66667vw;
+		left:50%;
+		transform:translateX(-50%);
+		width:55.73333%;
+	}
+
+	#about-screen-5 {
+		height:245.86667vw;
+	}
+
+	#about-screen-5 img:first-of-type {
+		position:relative;
+		top:initial;
+		left:initial;
+		width:auto;
+		display:block;
+		height:83.46667vw;
+	}
+
+	#about-screen-5 .text-left {
+		font-size:5.06667vw;
+		line-height: 1.64474;
+	    font-family: 'Roboto Medium';
+	    letter-spacing: 0.00500em;
+	    position: absolute;
+	    left: 11.26667%;
+	    top: 45.7%;
+	    width: 73%;
+	}
+
+	#about-screen-5 .text-right {
+		font-size: 3.20000vw;
+    line-height: 1.73750;
+    text-align: right;
+    width: 62.6%;
+    bottom: 26vw;
+		font-size:3.20000vw;
+		line-height:1.73750;
+	}
+
+	#about-screen-6 {
+		height:83.46667vw;
+		position:relative;
+	}
+
+	#about-screen-6 img {
+		position:absolute;
+		height:100%;
+		display:block;
+		left:50%;
+		top:0;
+		transform:translateX(-50%);
+		width:auto;
+	}
+
+
+	#about-screen-7 {
+		height:506.00000vw;
+		position:relative;
+
+	}
+
+	#about-screen-7 .welcome-frame {
+		width:77.86667vw;
+		height:50.13333vw;
+		top:-25vw;
+		font-size:5.06667vw;
+		padding:0% 11.20000vw;
+		font-family:'Roboto Regular';
+	}
+
+	#about-screen-7 .welcome-frame div span {
+		font-weight:600;
+	}
+
+	#about-screen-7 .content {
+		top:50.26667vw;
+	}
+
+	#about-screen-7 .content .row {
+		flex-direction: column;
+		align-items:center;
+		justify-content:flex-start;
+		margin-bottom:-2.5vw;
+	}
+
+	#about-screen-7 .content .row .person {
+		width:44.53333vw;
+		text-align:center;
+		overflow:hidden;
+		margin-bottom:13.7vw;
+	}
+
+	#about-screen-7 .content .row .person .name {
+		font-size:3.20000vw;
+		margin-bottom:1.9vw;
+	}
+
+	#about-screen-7 .content .row .person .position {
+		font-size:3.20000vw;
+	}
+
+	#about-screen-7 .content .row .person img {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 3.7vw;
+	    width: 107%;
+	    position: relative;
+	    left: -3.5%;
+	}
+
+	#about-screen-8 {
+		height:155.73333vw;
+		padding-top:27.675vw;
+	}
+
+	#about-screen-8 h2 {
+		font-size:5.06667vw;
+		margin-bottom:17.4vw;
+	}
+
+	#about-screen-8 .partners {
+		font-size:3.20000vw;
+	}
+
+	#about-screen-8 .partners .column:nth-of-type(n+3) {
+		display:none;
+	}
+
+	#about-screen-8 .partners .column {
+		width:auto;
+	}
+
+	#about-screen-8 .partners .column:first-of-type {
+		width:58%;
+	}
+
+	#about-screen-8 .partners .column div {
+		margin-bottom:4.2vw;
+	}
 }
