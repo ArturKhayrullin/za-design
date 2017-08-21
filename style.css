@@ -1867,4 +1867,9 @@ body.about .first-screen .frame {
 		padding-right:12%;
 	}
 
+	#blog-screen-1 {
+		background-size: 170%;
+    background-position: top center;
+	}
+
 }
