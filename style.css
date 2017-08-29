@@ -2307,3 +2307,143 @@ top: 33.7vw;
 		padding-bottom:39.1vw;
 	}
 }
+
+/*FRAMES*/
+#frames-screen-1.first-screen  .frame h3 {
+	max-width:initial;
+}
+
+#frames-screen-1.first-screen {
+	background:#e4e4e6;
+}
+
+#frames-screen-1.first-screen .frame {
+	background:#1a1a1a;
+}
+
+body.frames #menu-bar {
+	background:#e4e4e6;
+	color:#1a1a1a;
+}
+
+body.frames #menu-bar .right #menu-open-button div {
+	background:#1a1a1a;
+}
+
+.frame h3 .title-description {
+	font-size:0.93750vw;
+	letter-spacing:0.02500em;
+	color:#8a8a8a;
+	font-weight:normal;
+	font-family:'Roboto Regular';
+}
+
+#frames-screen-1 .project-types {
+	position:absolute;
+	bottom:4.68750vw;
+	right:5.57292vw;
+	font-size:0.93750vw;
+	line-height:1.66667;
+	color:#8a8a8a;
+	font-family:'Roboto Medium';
+	text-align:right;
+}
+
+#frames-screen-1 .project-types div {
+	cursor:pointer;
+}
+
+#frames-screen-1 .project-types div.active {
+	color:#1a1a1a;
+	text-decoration:underline;
+}
+
+#frames-screen-2 {
+	background:#f2f2f0;
+	padding:17.18750vw 11.14583vw;
+}
+
+#frames-screen-2 .row {
+	display:flex;
+	margin-bottom:4.68750vw;
+}
+
+#frames-screen-2 .row:nth-of-type(even) {
+	justify-content: flex-end;
+}
+
+#frames-screen-2 .row:nth-of-type(odd) {
+	justify-content: flex-start;
+}
+
+#frames-screen-2 .row .title-image {
+	background:#000000;
+	position:relative;
+}
+
+#frames-screen-2 .row .title-image img {
+	width:38.85417vw;
+	opacity:0.25;
+}
+
+#frames-screen-2 .row .title-image .title-image-description {
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	left:9.10308%;
+}
+
+#frames-screen-2 .row .title-image .title-image-description h3 {
+	font-size:2.23958vw;
+	color:#e6e6e4;
+	letter-spacing:0.00500em;
+	line-height:1.43333;
+	font-family:'Roboto Regular';
+}
+
+#frames-screen-2 .row .title-image .title-image-description p {
+	font-size:0.88542vw;
+	letter-spacing:-0.00500em;
+	color:#8a8a8a;
+	line-height:1.76471;
+}
+
+@media all and (max-width:620px) {
+	.frame h3 .title-description {
+		font-size:3.20000vw;
+	}
+
+	#frames-screen-1 .project-types {
+		display:none;
+	}
+
+	#frames-screen-2 .row .title-image img {
+		width:100%;
+	}
+
+	#frames-screen-2 .row img {
+		width:100% !important;
+	}
+
+	#frames-screen-2 .row .title-image .title-image-description h3 {
+		font-size:5.06667vw;
+		line-height:1.09737;
+	}
+
+	#frames-screen-2 .row .title-image .title-image-description p {
+		font-size:3.20000vw;
+		line-height:1.73750;
+	}
+
+	#frames-screen-2 {
+		padding: 22.1875vw 11.14583vw;
+	}
+
+	#frames-screen-2 .row {
+		margin-bottom:22.40000vw;
+	}
+
+	#frames-screen-2 .row .title-image .title-image-description {
+	    left: 7.50308%;
+	}	
+}
