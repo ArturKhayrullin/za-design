@@ -1,0 +1,305 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/jquery-ui.min.js"></script>
+    <script src="./libs/jquery.bxslider/jquery.bxslider.min.js"></script>
+    <script src="./libs/script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div id="menu-bar">
+      <span class="branding left">za design</span>
+
+      <div class="right">
+        <span>Меню</span>
+        <div id="menu-open-button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="feedback-form" class="full-overlay dark">
+      <div class="header">
+        <span class="branding left">za design</span>
+
+        <div class="right">
+          <span>Закрыть</span>
+          <div class="close">
+            <img src="./img/menu-bar-close.png" class="close-white">
+            <img src="./img/menu-bar-close-dark.png" class="close-dark">
+          </div>
+        </div>
+      </div>
+
+      <img src="./img/feedback-form-circle.png" class="circle">
+
+      <form class="content">
+        <div class="description">Оставьте свой номер телефона, чтобы мы могли связаться с вами в подходящее время.
+        </div>
+
+        <input type="text" name="name" placeholder="Имя" class="name">
+        <input type="text" name="phone" placeholder="Номер телефона" class="phone">
+
+        <button type="submit"><span>Отправить</span></button>
+      </form>    
+    </div>
+
+    <div id="contacts-menu" class="full-overlay" style="display:none;">
+      <div class="header">
+        <span class="branding left">za design</span>
+
+        <div class="right">
+          <span>Закрыть</span>
+          <div class="close">
+            <img src="./img/menu-bar-close.png" class="close-white">
+            <img src="./img/menu-bar-close-dark.png" class="close-dark">
+          </div>
+        </div>
+      </div>
+
+      <img src="./img/contacts-z.png" class="big-image">
+
+      <div class="left">
+        <div class="cities">
+          <div class="row">
+            <div class="city-name">
+              Москва
+            </div>
+            <div class="number">
+              +7 (985) 043 76 01
+            </div>
+          </div>
+          <div class="row">
+            <div class="city-name">
+              Санкт-Петербург
+            </div>
+            <div class="number">
+              +7 (985) 043 76 01
+            </div>
+          </div>
+          <div class="row">
+            <div class="city-name">
+              Краснодар 
+            </div>
+            <div class="number">
+              +7 (988) 347 80 10
+            </div>
+          </div>          
+        </div>
+
+        <div class="contacts">
+          <div class="row">
+            <div class="city-name">
+              E-mail:
+            </div>
+            <div class="number">
+              za@design.limo
+            </div>
+          </div>
+          <div class="row">
+            <div class="city-name">
+              Skype:
+            </div>
+            <div class="number">
+              za_design.limo
+            </div>
+          </div>        
+        </div>        
+      </div>
+
+      <div class="right">
+        <div class="row">
+          <a href="#">Facebook</a>
+        </div>
+        <div class="row">
+          <a href="#">Instagram</a>
+        </div>  
+        <div class="row">
+          <a href="#">Vkontakte</a>
+        </div>              
+      </div>
+
+      <a class="privacy-policy" href="#">Privacy Policy</a>
+      <div class="hoso-branding">Powered by <span>Hoso Bureau</span></div>
+    </div>
+    <div id="home-screen-1" class="home-screen first-screen">
+      <img src="./img/home-screen-1-circle.png" class="image">
+      <div class="frame">
+        <div class="content">
+          <h3>Фокус на деталях приводит 
+          к совершенной форме.</h3>
+
+          <p>Архитектура / Дизайн / Инженерия</p>
+        </div>
+
+        <img src="./img/home-screen-1-arrow.png" class="arrow-down">
+      </div>
+    </div>
+
+    <div id="home-screen-2" class="home-screen">
+      <img class="left" src="./img/home-screen-2-img.jpg">
+      <div class="right">
+        <div class="content">
+          <h5>Эстетическая привлекательность 
+              и функциональность.
+          </h5>
+          <p>Мы подходим к каждой задаче осознанно, принимая 
+  во внимание все ваши идеи и уникальность пространства. </p>
+          <b>za design</b>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="home-screen-3" class="home-screen">
+      <img class="left" src="./img/home-screen-3-img.jpg">
+      <div class="content">
+        <div class="row">
+          <span class="number">01</span>
+          <span class="title">Инженерия</span>
+        </div>
+        <div class="row">
+          <span class="number">02</span>
+          <span class="title">Архитектура</span>
+        </div>
+        <div class="row">
+          <span class="number">03</span>
+          <span class="title">Дизайн</span>
+        </div>
+        <div class="row">
+          <span class="number">04</span>
+          <span class="title">Авторский надзор</span>
+        </div>
+      </div>
+    </div>
+
+    <div id="home-screen-4" class="home-screen">
+      <div class="left">
+        <div class="content">
+          <div class="text">
+            Дизайн интерьера
+          </div>
+
+          <div class="button">
+            <span class="button-text">Смотреть</span>
+            <img src="./img/home-screen-4-arrow.png">
+            <div class="border border-top"></div>
+            <div class="border border-left"></div>
+            <div class="border border-bottom"></div>
+            <div class="border border-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="content">
+          <div class="text">
+            Технические продукты
+          </div>
+
+          <div class="button">
+            <span class="button-text">Смотреть</span>
+            <img src="./img/home-screen-4-arrow.png">
+            <div class="border border-top"></div>
+            <div class="border border-left"></div>
+            <div class="border border-bottom"></div>
+            <div class="border border-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-screen" id="home-screen-5">
+      <div class="left">
+        <!-- <img src="img/home-screen-5-img.jpg"> -->
+      </div>
+      <div class="right">
+        <div class="circle">
+          <img src="./img/home-screen-5-arrow.png">
+        </div>
+        <div class="content">
+          <span>Экстерьер</span>
+
+          <div class="button">
+            <span class="button-text">Смотреть</span>
+            <img src="./img/home-screen-4-arrow.png">
+            <div class="border border-top"></div>
+            <div class="border border-left"></div>
+            <div class="border border-bottom"></div>
+            <div class="border border-right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="home-screen-6" class="home-screen">
+      <div class="left">
+        <div class="content">
+          <h1>Za Design это:</h1>
+          <div class="feature">Функциональность</div>
+          <div class="feature">Креативность</div>
+          <div class="feature">Профессионализм</div>
+          <div class="feature">Качество</div>
+          <div class="button">
+            <span class="button-text">Знакомство с нами</span>
+            <img src="./img/home-screen-4-arrow.png">
+            <div class="border border-top"></div>
+            <div class="border border-left"></div>
+            <div class="border border-bottom"></div>
+            <div class="border border-right"></div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <img src="./img/home-screen-6-img.png" class="home-screen-6-img">
+        <img src="./img/home-screen-6-copyright-pure.png" class="copyright-pure">
+      </div>
+    </div>
+
+    <div id="home-screen-7" class="home-screen"> 
+      <div class="left">
+        <div class="column-1">
+          <div class="contacts-item">
+            <div class="title">Москва</div>
+            <div class="info">+7 (985) 043 76 01</div>
+          </div>
+          <div class="contacts-item">
+            <div class="title">Санкт-Петербург</div>
+            <div class="info">+7 (911) 745 87 34</div>
+          </div>
+          <div class="contacts-item">
+            <div class="title">Краснодар</div>
+            <div class="info">+7 (988) 347 80 10</div>
+          </div>
+        </div>
+
+        <div class="column-2">
+          <div class="contacts-item">
+            <div class="title">E-mail: </div>
+            <div class="info">za@design.limo</div>
+          </div>
+          <div class="contacts-item">
+            <div class="title">Skype: </div>
+            <div class="info">za_design.limo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <img src="./img/home-screen-6-copyright.png">
+        <div class="vendor">Powered by <span class="hoso">Hoso Bureau</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src=""></script>
+</body>
+
+</html>
