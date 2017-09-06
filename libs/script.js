@@ -78,5 +78,24 @@ $(document).ready(function() {
 
     $('#contacts-close').click(function() {
         window.close();
-    })
+    });
+
+    $("#about-screen-7 .person img").mouseenter(function() {
+        $(this).attr("src", $(this).attr("src").replace(".jpg", ".gif"));
+    });
+
+    $("#about-screen-7 .person img").mouseout(function() {
+        $(this).attr("src", $(this).attr("src").replace(".gif", ".jpg"));
+    });    
+
+
+
+    var controller = new ScrollMagic.Controller();
+
+    var frameScene = new ScrollMagic.Scene({triggerElement: ".first-screen .frame h3", duration: 500})
+    .setTween(".frame", {left:-100, scale:0.9})
+    .addTo(controller);
+    var imageScene = new ScrollMagic.Scene({triggerElement: ".first-screen .frame h3", duration: 500})
+    .setTween(".first-screen .image", {right:-100, scale:0.9})
+    .addTo(controller);    
 });
