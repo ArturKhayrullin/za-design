@@ -262,6 +262,7 @@ body {
 #home-screen-3 .left {
     max-height: 100%;
     opacity: .25;
+    position:relative;
 }
 
 #home-screen-3 .content {
@@ -722,7 +723,16 @@ body {
     width: 0.68vw;
 }
 
+.fadeIn {
+    opacity:0;
+    transform:translateY(100%);
+    transition:0.7s;
+}
 
+.fadeIn.active {
+    opacity:1;
+    transform:translateY(0);
+}
 
 
 /*ABOUT*/
