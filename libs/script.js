@@ -76,8 +76,8 @@ $(document).ready(function() {
         $(".wrapper").css('overflow','visible').css('height','initial');
     });
 
-    $('#contacts-close').click(function() {
-        window.close();
+    $('#contacts-menu .header .right').click(function() {
+        window.history.back();
     });
 
     $("#about-screen-7 .person img").mouseenter(function() {
@@ -90,25 +90,25 @@ $(document).ready(function() {
 
 
 
-    var controller = new ScrollMagic.Controller();
+    // var controller = new ScrollMagic.Controller();
 
 
-    /*INDEX PAGE*/
-    var homeScreen1 = new ScrollMagic.Scene({triggerElement: ".first-screen .frame h3", duration: 500})
-    .setTween(".frame", {left:-100})
-    .addTo(controller);
+    // /*INDEX PAGE*/
+    // var homeScreen1 = new ScrollMagic.Scene({triggerElement: ".first-screen .frame h3", duration: 500})
+    // .setTween(".frame", {left:-100})
+    // .addTo(controller);
 
-    var homeScreen2 = new ScrollMagic.Scene({triggerElement: "#home-screen-2", duration: 500})
-    .on('start', function() {
-        $('#home-screen-2 .fadeIn').addClass('active');
-    })
-    .addTo(controller);
+    // var homeScreen2 = new ScrollMagic.Scene({triggerElement: "#home-screen-2", duration: 500})
+    // .on('start', function() {
+    //     $('#home-screen-2 .fadeIn').addClass('active');
+    // })
+    // .addTo(controller);
 
 
-    $('#home-screen-3 .left').css('left','-10%');
-    var homeScreen3 = new ScrollMagic.Scene({triggerElement: "#home-screen-3", duration: 500})
-    .setTween("#home-screen-3 .left", {left:0})
-    .addTo(controller);     
+    // $('#home-screen-3 .left').css('left','-10%');
+    // var homeScreen3 = new ScrollMagic.Scene({triggerElement: "#home-screen-3", duration: 500})
+    // .setTween("#home-screen-3 .left", {left:0})
+    // .addTo(controller);     
     
 
 

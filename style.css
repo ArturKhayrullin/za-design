@@ -78,9 +78,7 @@ body {
     text-decoration:none;
 }
 
-#menu-bar .branding a:hover {
-    text-decoration:underline;
-}
+
 
 #menu-bar .right {
     display: flex;
@@ -2915,6 +2913,11 @@ body.frames #menu-bar .right #menu-open-button div {
     font-size: 1.45vw;
     font-weight: bold;
     margin-left: 5.5%;
+}
+
+.full-overlay .header .branding a {
+    text-decoration:none;
+    color:inherit;
 }
 
 .full-overlay .header .right {
