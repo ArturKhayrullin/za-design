@@ -37,7 +37,7 @@ $(document).ready(function() {
 
             onSlideAfter: function($slideElement, oldIndex, newIndex) {
 
-                $(this).closest('.slider-wrapper').find('.currentSlide').html(this.getCurrentSlide()+1);
+                $(this).closest('.slider-wrapper').find('.currentSlide').html(this.getCurrentSlide() + 1);
             },
 
             onSliderLoad: function(currentIndex) {
@@ -66,16 +66,16 @@ $(document).ready(function() {
     $("#menu-opener").click(function() {
         $("#menu").fadeIn('fast', function() {
             $('#menu .content-mobile .accordion').accordion({
-              collapsible: true
-            });            
+                collapsible: true
+            });
         });
-        $("body").height($("#menu").height()).css('overflow','hidden');
-        
+        $("body").height($("#menu").height()).css('overflow', 'hidden');
+
     });
 
     $("#menu-closer").click(function() {
         $("#menu").fadeOut();
-        $("body").css('overflow','visible').css('height',$('body').attr('data-initHeight'));
+        $("body").css('overflow', 'visible').css('height', $('body').attr('data-initHeight'));
     });
 
     $('#contacts-menu .header .right').click(function() {
@@ -88,7 +88,7 @@ $(document).ready(function() {
 
     $("#about-screen-7 .person img").mouseout(function() {
         $(this).attr("src", $(this).attr("src").replace(".gif", ".jpg"));
-    });    
+    });
 
 
 
@@ -111,14 +111,35 @@ $(document).ready(function() {
     // var homeScreen3 = new ScrollMagic.Scene({triggerElement: "#home-screen-3", duration: 500})
     // .setTween("#home-screen-3 .left", {left:0})
     // .addTo(controller);     
-    
 
-    if ($(window).width()>620) {
+    if ($(window).width() > 620) {
+
+    $('#home-screen-3 > .content .row').click(function() {
+        $('#home-screen-3 > .content').animate({
+                opacity: 0
+            },
+            200,
+            function() {
+                $('#home-screen-3 > .content').hide();
+                $('#home-screen-3 .left, #home-screen-3 .right').addClass('expanded');
+            });
+    });
+
+    $('#home-screen-3 .right .minimize').click(function() {
+        $('#home-screen-3 .left, #home-screen-3 .right').removeClass('expanded');
+        $('#home-screen-3 > .content').show();
+        $('#home-screen-3 > .content').animate({
+                opacity: 1
+            },
+            200);
+    });
+
+    
         $(".parallaxify").inertiaScroll({
-          parent: $(".wrapper"),
-          childDelta1: 0.02,
-          childDelta2: 0.1,
-          parentDelta: 0.08
+            parent: $(".wrapper"),
+            childDelta1: 0.02,
+            childDelta2: 0.1,
+            parentDelta: 0.08
         });
     }
 
