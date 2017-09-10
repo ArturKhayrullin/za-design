@@ -33,9 +33,9 @@ body {
     font-size: 1.8em;
 }
 
-*::-webkit-scrollbar {
+/**::-webkit-scrollbar {
     width: 0 !important
-}
+}*/
 
 
 .wrapper {
@@ -43,7 +43,11 @@ body {
     position: relative;
     max-width: 100%;
     overflow: hidden;
+/*    height:100%;*/
+
 }
+
+
 
 .home-screen {
 

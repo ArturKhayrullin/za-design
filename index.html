@@ -12,7 +12,7 @@
     <script src="./libs/scrollmagic/TweenMax.min.js"></script>
     <script src="./libs/scrollmagic/minified/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-
+    <script src="./libs/inertiaScroll/docs/jquery-inertiaScroll.js"></script>
     <script src="./libs/script.js"></script>
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -48,12 +48,13 @@
             <div class="left">
                 <div class="content-desktop">
                     <div class="level1 has-children">
-                        <a href="./in-work.html">Проекты</a>
+                        <a href="./frames.html">Проекты</a>
                         <img src="./img/has-children-arrow.png">
                         <div class="child-menu">
-                            <a href="./in-work.html">ДИЗАЙН</a>
-                            <a href="./in-work.html">АРХИТЕКТУРА</a>
-                            <a href="./in-work.html">ИНЖЕНЕРИЯ</a>
+                            <a href="./frames-all-projects.html"><b>ВСЕ ПРОЕКТЫ</b></a>
+                            <a href="./frames-interior-design.html">ДИЗАЙН</a>
+                            <a href="./frames-architecture.html">АРХИТЕКТУРА</a>
+                            <a href="./frames-engineering.html">ИНЖЕНЕРИЯ</a>
                         </div>
                     </div>
 
@@ -75,9 +76,10 @@
                   <div class="accordion">
                     <h3>Проекты<img src="./img/has-children-arrow.png"></h3>
                     <div>
-                      <a class="submenu-link" href="./in-work.html">ДИЗАЙН</a>
-                      <a class="submenu-link" href="./in-work.html">АРХИТЕКТУРА</a>
-                      <a class="submenu-link" href="./in-work.html">ИНЖЕНЕРИЯ</a>
+                      <a class="submenu-link" href="./frames-all-projects.html"><b>ВСЕ ПРОЕКТЫ</b></a> 
+                      <a class="submenu-link" href="./frames-interior-design.html">ДИЗАЙН</a>
+                      <a class="submenu-link" href="./frames-architecture.html">АРХИТЕКТУРА</a>
+                      <a class="submenu-link" href="./frames-engineering.html">ИНЖЕНЕРИЯ</a>
                     </div>
                   </div>
 
@@ -119,8 +121,8 @@
 
 
         <div id="home-screen-1" class="home-screen first-screen">
-            <img src="./img/home-screen-1-circle.png" class="image">
-            <div class="frame">
+            <img src="./img/home-screen-1-circle.png" class="image parallaxify" data-speed="20">
+            <div class="frame parallaxify" data-speed="10">
                 <div class="content">
                     <h3>Фокус на деталях приводит 
           к совершенной форме.</h3>
@@ -130,8 +132,8 @@
             </div>
         </div>
         <div id="home-screen-2" class="home-screen">
-            <img class="left" src="./img/home-screen-2-img.jpg">
-            <div class="right">
+            <img class="left parallaxify" src="./img/home-screen-2-img.jpg" data-speed="2">
+            <div class="right parallaxify" data-speed="6">
                 <div class="content">
                     <h5>Эстетическая привлекательность 
               и функциональность.
@@ -267,7 +269,7 @@
             </div>
             <div class="right">
                 <img src="./img/home-screen-6-copyright.png">
-                <div class="vendor"><a href="http://hoso.pro">Powered by <span class="hoso">Hoso Bureau</span></a></div>
+                <div class="vendor"><a href="http://hoso.pro">Powered by <span class="hoso">Hoso Büro</span></a></div>
             </div>
         </div>
     </div>
