@@ -2402,13 +2402,20 @@ body.frames #menu-bar .right #menu-open-button div {
     text-align: right;
 }
 
-#frames-screen-1 .project-types div {
+#frames-screen-1 .project-types a {
     cursor: pointer;
+    display:block;
+    color:inherit;
+    text-decoration:none;
 }
 
-#frames-screen-1 .project-types div.active {
+#frames-screen-1 .project-types a.active {
     color: #1a1a1a;
     text-decoration: underline;
+}
+
+#frames-screen-1 .project-types a:hover {
+    color: #1a1a1a;
 }
 
 #frames-screen-2 {
@@ -2432,6 +2439,9 @@ body.frames #menu-bar .right #menu-open-button div {
 #frames-screen-2 .row .title-image {
     background: #000000;
     position: relative;
+    display:block;
+    text-decoration:none;
+    color:inherit;
 }
 
 #frames-screen-2 .row .title-image img {
