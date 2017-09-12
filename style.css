@@ -33,9 +33,9 @@ body {
     font-size: 1.8em;
 }
 
-/**::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 0 !important
-}*/
+}
 
 
 .wrapper {
@@ -342,7 +342,7 @@ body {
 
 #home-screen-3 .right .minimize img {
     width:1.14583vw;
-    transform:rotate(180deg);
+    
 }
 
 #home-screen-3 .left img {
@@ -453,6 +453,7 @@ body {
     padding: 0% 14%;
     font-family: 'Roboto Light';
     font-size: 1vw;
+    text-decoration:none;
 }
 
 #home-screen-4 .content .button:hover {
@@ -581,6 +582,8 @@ body {
     justify-content: center;
     flex-grow: 1;
     position: relative;
+    text-decoration:none;
+    color:inherit;
 }
 
 .home-screen#home-screen-5 .right .content {
@@ -3477,7 +3480,7 @@ body.frames #menu-bar .right #menu-open-button div {
 	left:100%;
 	top:-0.5vw;
 	opacity:0;
-	transition:0.1s ease;
+	transition:0.3s ease;
 	visibility:hidden;
 }
 

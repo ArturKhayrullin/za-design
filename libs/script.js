@@ -62,20 +62,100 @@ $(document).ready(function() {
     // });
 
     $('body').attr('data-initHeight', $('body').height());
-
+    var animSpeed = 1000;
+    var initialLeftSize = $('#menu > .left').css('width');
     $("#menu-opener").click(function() {
-        $("#menu").fadeIn('fast', function() {
-            $('#menu .content-mobile .accordion').accordion({
-                collapsible: true
+
+        if ($(window).width() <= 620) {
+            $("#menu").fadeIn('fast', function() {
+                $('#menu .content-mobile .accordion').accordion({
+                    collapsible: true
+                });
             });
-        });
-        $("body").height($("#menu").height()).css('overflow', 'hidden');
+        } else {
+            $("body").height($("#menu").height()).css('overflow', 'hidden');
+
+            $('#menu *').not('.child-menu').css('opacity', '0');
+            $('#menu').css('display', 'block');
+            $('#menu').css('width', '0%');
+
+            $('#menu > .left').css('width', '0%').css('opacity', 'initial');
+            $('#menu').animate({
+                    width: '100%'
+                },
+                animSpeed,
+                function() {
+                    /* stuff to do after animation is complete */
+                });
+
+            setTimeout(function() {
+
+                $('#menu > .left').animate({
+                        width: initialLeftSize
+                    },
+                    animSpeed * 1.1,
+                    function() {
+                        /* stuff to do after animation is complete */
+                        var time = 0;
+                        var timeOffset = 10;
+                        var duration = 500;
+                        $('#menu *').not('#menu > .left, .child-menu').each(function(index, el) {
+                            var currentElement = this;
+                            setTimeout(function() {
+                                $(currentElement).animate({ opacity: '1' }, duration);
+                            }, time);
+                            time += timeOffset;
+                        });
+                    });
+            }, 300);
+
+
+
+        }
 
     });
 
     $("#menu-closer").click(function() {
-        $("#menu").fadeOut();
-        $("body").css('overflow', 'visible').css('height', $('body').attr('data-initHeight'));
+
+        if ($(window).width() <= 620) {
+            $("#menu").fadeOut();
+            $("body").css('overflow', 'visible').css('height', $('body').attr('data-initHeight'));
+        } else {
+            var time = 0;
+            var timeOffset = 10;
+            var duration = 500;
+
+            var opacityArrayLength = $('#menu *').not('#menu > .left, .child-menu').length;
+            console.log('length is ' + opacityArrayLength);
+            $('#menu *').not('#menu > .left, .child-menu').each(function(index, el) {
+
+                var currentElement = this;
+                setTimeout(function() {
+                    $(currentElement).animate({ opacity: '0' }, duration, function() {
+                        console.log(index);
+                        if (index == opacityArrayLength - 1) { //when last element has faded out
+
+                            $('#menu > .left').animate({ width: '0%' }, animSpeed);
+                            $('#menu').animate({
+                                    width: '0%',
+                                },
+                                animSpeed * 1.1,
+                                function() {
+                                    /* stuff to do after animation is complete */
+                                    $('#menu').hide();
+                                    $('#menu').css('width', 'initial');
+                                    $("body").css('overflow', 'visible').css('height', $('body').attr('data-initHeight'));
+                                });
+                        }
+
+                    });
+                }, time);
+                time += timeOffset;
+            });
+
+
+
+        }
     });
 
     $('#contacts-menu .header .right').click(function() {
@@ -114,27 +194,27 @@ $(document).ready(function() {
 
     if ($(window).width() > 620) {
 
-    $('#home-screen-3 > .content .row').click(function() {
-        $('#home-screen-3 > .content').animate({
-                opacity: 0
-            },
-            200,
-            function() {
-                $('#home-screen-3 > .content').hide();
-                $('#home-screen-3 .left, #home-screen-3 .right').addClass('expanded');
-            });
-    });
+        $('#home-screen-3 > .content .row').click(function() {
+            $('#home-screen-3 > .content').animate({
+                    opacity: 0
+                },
+                200,
+                function() {
+                    $('#home-screen-3 > .content').hide();
+                    $('#home-screen-3 .left, #home-screen-3 .right').addClass('expanded');
+                });
+        });
 
-    $('#home-screen-3 .right .minimize').click(function() {
-        $('#home-screen-3 .left, #home-screen-3 .right').removeClass('expanded');
-        $('#home-screen-3 > .content').show();
-        $('#home-screen-3 > .content').animate({
-                opacity: 1
-            },
-            200);
-    });
+        $('#home-screen-3 .right .minimize').click(function() {
+            $('#home-screen-3 .left, #home-screen-3 .right').removeClass('expanded');
+            $('#home-screen-3 > .content').show();
+            $('#home-screen-3 > .content').animate({
+                    opacity: 1
+                },
+                200);
+        });
 
-    
+
         $(".parallaxify").inertiaScroll({
             parent: $(".wrapper"),
             childDelta1: 0.02,
