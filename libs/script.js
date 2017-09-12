@@ -144,6 +144,7 @@ $(document).ready(function() {
                                     /* stuff to do after animation is complete */
                                     $('#menu').hide();
                                     $('#menu').css('width', 'initial');
+                                    $('#menu > .left').css('width',initialLeftSize);
                                     $("body").css('overflow', 'visible').css('height', $('body').attr('data-initHeight'));
                                 });
                         }
