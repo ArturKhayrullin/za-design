@@ -3509,6 +3509,7 @@ body.frames #menu-bar .right #menu-open-button div {
 	letter-spacing:0.02500em;
 	font-size:0.93750vw;
 	line-height:3.33334;
+    white-space:nowrap;
 }
 
 #menu .content-desktop .level1:hover .child-menu {
